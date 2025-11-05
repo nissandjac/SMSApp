@@ -13,8 +13,8 @@ library("cowplot")
 library("shinyWidgets")
 suppressMessages(library("writexl"))
 
-devtools::install_github("ricardo-bion/ggradar", dependencies = TRUE)
-devtools::install_github("https://github.com/hrbrmstr/hrbrthemes")
+# devtools::install_github("ricardo-bion/ggradar", dependencies = TRUE)
+# devtools::install_github("https://github.com/hrbrmstr/hrbrthemes")
 library(ggradar)
 
 # Sankey diagram
