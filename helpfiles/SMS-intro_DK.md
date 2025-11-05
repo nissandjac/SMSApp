@@ -2,7 +2,7 @@
 title: 'SMS prognoser'
 output:
   html_document:
-    keep_md: yes
+    keep_md: true
 ---
 
 

@@ -2,7 +2,7 @@
 title: 'SMS prognoser'
 output:
   html_document:
-    keep_md: yes
+    keep_md: true
 ---
 
 This section provides some background information for this App. To make forecasts, you have to push **"Simple predictions"** or **"Detailed predictions"** in the top of the screen. The calculations for the Simple predictions are the same as for the Detailed predictions, but simpler output are produced for the simple prediction, so this model type runs faster.
