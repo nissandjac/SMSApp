@@ -1,6 +1,7 @@
 
 # call to the OP program
-do_OP<-function(readResSimple=TRUE,readResDetails=FALSE,readResStom=FALSE,writeOption=FALSE,writeExplPat=FALSE,source='',data_dir='Data') {
+do_OP<-function(readResSimple=TRUE,readResDetails=FALSE,readResStom=FALSE,writeOption=FALSE,writeExplPat=FALSE,source='',
+                data_dir='Data') {
   op.n<<-op.n+1
 
   #cat(op.n, "call source:", source, "  ,data_dir:",data_dir,"  ,readResSimple:",readResSimple," ,readResDetails:",readResDetails," ,readResStom:",readResStom," ,writeOption:",writeOption,"  writeExplPat:",writeExplPat,'\n')
@@ -27,9 +28,13 @@ do_OP<-function(readResSimple=TRUE,readResDetails=FALSE,readResStom=FALSE,writeO
   }  
   
   # run the script
-  if(OS == "windows") shell(cmd)
-  if(OS == "unix") system(cmd)
-  
+  if (interactive() && OS == "windows") {
+    shell(cmd)
+  } else {
+    if (OS == "unix") system(cmd)
+    
+    #message("Skipping system command in hosted environment")
+  }
   
   doRunModel<<-FALSE
   

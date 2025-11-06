@@ -15,6 +15,10 @@ suppressMessages(library("writexl"))
 
 # devtools::install_github("ricardo-bion/ggradar", dependencies = TRUE)
 # devtools::install_github("https://github.com/hrbrmstr/hrbrthemes")
+
+#renv::install("hrbrmstr/hrbrthemes")
+
+
 library(ggradar)
 
 # Sankey diagram
@@ -39,9 +43,7 @@ OS<- .Platform$OS.type  #operating system
 
 source("flsms.control.r",local=TRUE) # to handle file SMS.dat with options for running SMS in hindcast and producing data for forecast
 source("flop.control.r",local=TRUE)
-
 source('make_plots.R',local=TRUE)
-
 source('do_OP.R',local=TRUE)
 
 ## end Constants #####

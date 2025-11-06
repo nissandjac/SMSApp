@@ -1,0 +1,12 @@
+name: SMSApp
+title: SMSApp
+username: nissandjac
+account: nissandjac
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15984382
+bundleId: 11139623
+url: https://nissandjac.shinyapps.io/SMSApp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
